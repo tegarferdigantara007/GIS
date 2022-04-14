@@ -18,8 +18,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    @livewireStyles
-    <link href="https://cdn.maptiler.com/mapbox-gl-js/v1.13.2/mapbox-gl.css" rel="stylesheet" />
 </head>
 <body>
     <div id="app">
@@ -79,11 +77,7 @@
 
         <main class="py-4">
             @yield('content')
-            {{ isset($slot) ? $slot : null}}
         </main>
     </div>
-    @livewireScripts
-    <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.13.2/mapbox-gl.js"></script>
-    @stack('scripts')
 </body>
 </html>

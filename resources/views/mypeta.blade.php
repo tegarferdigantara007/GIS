@@ -1,11 +1,4 @@
-<div>
-    <h1>Ini Map Area Universitas Tanjungpura</h1>
-    <div id="map"></div>
-    
-</div>
-
-@push('scripts')
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,19 +10,22 @@
         #peta { height: 680px; }
     </style>
 
-       <!-- css leaflfet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css&quot;
+    <!-- css leaflfet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
 
    <!-- leafletjs -->
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js&quot;
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA="crossorigin="></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
 
    <!-- leaflet search -->
    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@3.0.0/dist/geosearch.css"/>
-
 <script src="https://unpkg.com/leaflet-geosearch@3.1.0/dist/geosearch.umd.js"></script>
+
+
+   
 </head>
 <body>
     <div id="peta"></div>
@@ -74,5 +70,3 @@ const search = new GeoSearch.GeoSearchControl({
     </script>
 </body>
 </html>
-
-@endpush
